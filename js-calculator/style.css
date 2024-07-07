@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+  }
+  
+  #calculator {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #display {
+    width: 100%;
+    padding: 20px;
+    font-size: 2rem; /* Adjusted font size to fit within the display */
+    text-align: right; /* Align text to the right for a calculator display */
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: whitesmoke;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width */
+  }
+  
+  #keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 35%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: hsl(0, 0%, 60%);
+  }
+  
+  .operator-btn {
+    background-color: hsl(35, 62%, 65%);
+  }
+  
+  .operator-btn:hover {
+    background-color: hsl(35, 62%, 75%);
+  }
+  
